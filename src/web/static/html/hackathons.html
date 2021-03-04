@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Hackathons and GameJams</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.css" />
+	<script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.js"></script>
+	<script>
+		$( function() {
+			$( "#content" ).tabs();
+		} );
+	</script>
+  
+</head>
+<body>
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li class="linkmenu"><a href="index.html">Main Page</a></li>
+                <li class="linkmenu dropdownMenu">
+                    <a href="hackathons.html">Hackathons</a>
+                    <ul class="dropdownMenuContent">
+                        <li><a href="hackathons.html#onehour">One Hour Game Jam</a></li>
+                        <li><a href="hackathons.html#stupidhacktahon">Stupid Hacktahon</a></li>
+                        <li><a href="hackathons.html#global">GlobalGameJam 2018</a></li>
+                    </ul>
+                </li>
+                <li class="linkmenu"><a href="studentgroup.html">.NET Group</a></li>
+                <li class="linkmenu"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>
+                <svg width="30" height="30">
+                    <circle cx="15" cy="20" r="10" fill="#657a97" transform="skewX(10)">
+                        <animate attributeName="opacity"
+                                 from="1" to="0" dur="5s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+                Hackathons
+                <svg width="30" height="30">
+                    <circle cx="15" cy="20" r="10" fill="#657a97" transform="skewX(-10)">
+                        <animate attributeName="opacity"
+                                 from="1" to="0" dur="5s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </h1>
+        </header>
+        <div id="content">
+
+			<ul>
+				<li><a href="#tabs-1">One Hour Game Jam</a></li>
+				<li><a href="#tabs-2">Stupid Hackathon</a></li>
+				<li><a href="#tabs-3">Global Game Jam</a></li>
+			</ul>
+            <section id="tabs-1">
+                <h2 id="onehour"><a href="http://onehourgamejam.com/" style="color:blue;">One Hour Game Jam</a></h2>
+                <p style="width: 95%;">Every Saturday at 20:00 UTC. At the start of the hour, the theme is announced on the site and on Discord. Themes are suggested and voted by the community on the Theme Voting page. You have an hour to make a game. You are free to use premade assets but it is recommended that you make at least one game from scratch. Some assets are provided on the Assets page but you do not have to use them. About 30 minutes after the jam ends, we host a stream on Twitch where all submitted games are played. The stream usually lasts about 2 hours. It's not always the same people streaming though, so keep an eye on Discord to see who's streaming. If you come late you can still participate. If the stream is over, then your game won't be played on-stream, obviously, but we'll still keep it on the site!</p>
+            </section>
+            <section id="tabs-2">
+                <h2 id="stupidhacktahon"><a href="https://www.facebook.com/stupidhackathonpolska/" style="color:blue;">Stupid Hacktahon</a></h2>
+                <div class="gallery">
+                    <a href="stupid_hackathon/contestants.jpg">
+                        <img src="stupid_hackathon/contestants.jpg" alt="All contestants" width="200">
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="stupid_hackathon/my_photo.jpg">
+                        <img src="stupid_hackathon/my_photo.jpg" alt="My dumb photo" width="200">
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="stupid_hackathon/t-shirts.jpg">
+                        <img src="stupid_hackathon/t-shirts.jpg" alt="'Hacktahon' T-shirts" width="200">
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="stupid_hackathon/sebastian.jpg">
+                        <img src="stupid_hackathon/sebastian.jpg" alt="Friend showing a useless project" width="200">
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="stupid_hackathon/winners.jpg">
+                        <img src="stupid_hackathon/winners.jpg" alt="Winners (me included c:)" width="200">
+                    </a>
+                </div>
+                <div class="gallery">
+                    <a href="stupid_hackathon/ending.jpg">
+                        <img src="stupid_hackathon/ending.jpg" alt="Ending" width="200">
+                    </a>
+
+                </div>
+            </section>
+            <section id="tabs-3">
+                <h2 id="global"><a href="https://www.facebook.com/events/570309783301791/" style="color:blue;">Hackerspace/Global Game Jam 2018</a></h2>
+                <p style="width: 95%;">
+                    The Global Game Jam® (GGJ) is the world's largest game jam event (game creation) taking place around the world at physical locations. Think of it as a hackathon focused on game development. It is the growth of an idea that in today’s heavily connected world, we could come together, be creative, share experiences and express ourselves in a multitude of ways using video games – it is very universal. The weekend stirs a global creative buzz in games, while at the same time exploring the process of development, be it programming, iterative design, narrative exploration or artistic expression. It is all condensed into a 48 hour development cycle. The GGJ encourages people with all kinds of backgrounds to participate and contribute to this global spread of game development and creativity.
+
+                    The structure of a jam is usually that everyone gathers on Friday late afternoon, watches a short video keynote with advice from leading game developers, and then a secret theme is announced. All sites worldwide are then challenged to make games based on that same theme, with games to be completed by Sunday afternoon. In January 2018, we had 803 locations in 108 countries create 8,606 games in one weekend! GGJ 2019 is January 25-27 at a location near you… if not you can make one of your own. The jam is known for helping foster new friendships, increase confidence and opportunities within the community. The jam is always an intellectual challenge. People are invited to explore new technology tools, trying on new roles in development and testing their skills to do something that requires them to design, develop create, test and make a new game in the time span of 48 hours.
+                </p>
+            </section>
+            <a href="#">To the top</a>
+        </div>
+        <footer> Copyright 2018, Rozalia Karolczak</footer>
+    </div>
+</body>
+</html>
+
+

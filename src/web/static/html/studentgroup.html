@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>.NET PG Student Group</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav media="(max-width: 480px)">
+            <ul>
+                <li class="linkmenu"><a href="index.html">Main Page</a></li>
+                <li class="linkmenu dropdownMenu">
+                    <a href="hackathons.html" id="hack">Hackathons</a>
+                    <ul class="dropdownMenuContent">
+                        <li><a href="hackathons.html#onehour">One Hour Game Jam</a></li>
+                        <li><a href="hackathons.html#stupidhacktahon">Stupid Hacktahon</a></li>
+                        <li><a href="hackathons.html#global">GlobalGameJam 2018</a></li>
+                    </ul>
+                </li>
+                <li class="linkmenu"><a href="studentgroup.html">.NET Group</a></li>
+                <li class="linkmenu"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>
+                <svg width="30" height="30">
+                    <circle cx="15" cy="20" r="10" fill="#657a97" transform="skewX(10)">
+                        <animate attributeName="opacity"
+                                 from="1" to="0" dur="5s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+                .NET group
+                <svg width="30" height="30">
+                    <circle cx="15" cy="20" r="10" fill="#657a97" transform="skewX(-10)">
+                        <animate attributeName="opacity"
+                                 from="1" to="0" dur="5s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+            </h1>
+        </header>
+        <div id="content">
+            <section>
+                <h3 id="whatis">What .NET is</h3>
+                <table>
+                    <tr>
+                        <td id="beg">For beginners</td>
+                        <td id="adv">For intermediate/advanced</td>
+                    </tr>
+                    <tr>
+                        <td>C# section</td>
+                        <td>ASP.NET section</td>
+                    </tr>
+                </table>
+                <p>It's a group of students from GUT (and not only), who want to share their knowledge of .NET platform with people who may have never ever heard of its existence. </p>
+				<button type="button" id="butt_1" onclick="show_beginner()">Beginner</button>
+				<script>
+					$("#butt_1").click(function(){
+						$("#beg").addClass("important");
+						$("#adv").removeClass("important");
+					});
+				</script>
+				<button type="button" id="butt_2" onclick="show_advanced()">Intermediate/Advanced</button>
+				<script>
+					$("#butt_2").click(function(){
+						$("#adv").addClass("important");
+						$("#beg").removeClass("important");
+					});
+				</script>	
+				<p id="dot_net_text_yes"></p>
+				<button type="button" onclick="dont_show_anymore()">Not interested</button>
+				<p id="dot_net_text_no"></p>
+				</section>
+            <section>
+                <h3 id="whatisnot">What .NET is not</h3>
+                <p>It's not a team of senior developers who have known the technology for 10+ years. It's not an organisation which takes your money in exchange for the most sought after knowledge of C# or ASP.NET. It's not an extra class you come to and passively gain knowledge needed for programming. If you're still on board, come see us! :)</p>
+            </section>
+        </div>
+    </div>
+    <script src="script1_dot_net.js"></script>
+</body>
+</html>

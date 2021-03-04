@@ -1,0 +1,168 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    height: 60px;
+}
+
+h1 {
+    color: #657a97;
+    margin-top: 30px;
+}
+
+h2, h3 {
+    color: #657a97;
+}
+
+p {
+    text-align:justify;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li.linkmenu {
+    margin-right:10px;
+    margin-top: 20px;
+}
+
+nav li.linkmenu a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li.linkmenu > a {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    background-color: #657a97;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav ul.dropdownMenuContent {
+    display: none;
+    position: absolute;
+    margin-left: 165px;
+}
+
+nav ul.dropdownMenuContent > li {
+    display: block;
+    background-color: #657a97;
+    text-align: center;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+nav li.linkmenu > a:hover,
+nav ul.dropdownMenuContent > li:hover {
+    opacity: 0.6;
+}
+
+dl {
+    display: block;
+    margin: 2em -1em;
+    position: fixed;
+}
+
+ul li {
+    display: inline;
+    margin: 0px 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav {
+    margin-top: 50px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+
+td {
+    padding: 2px 10px;
+    border: solid 1px black;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+footer {
+    clear: both;
+    padding: 20px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#content {
+    width: 100%;
+}
+
+#contact {
+    margin-bottom: 50px;
+}
+
+.important {
+	color: #e70f0f;
+	font-weight: bold;
+}
+.gallery {
+    display: inline;
+}
+
+.form {
+    margin: 0px 0px 15px 0px;
+}
+
+::selection {
+  color: #2a2b75;
+  background: #a2bab7;
+}
+
+@keyframes example {
+    from {
+        background-color: ghostwhite;
+        color: #657a97;
+    }
+
+    to {
+        background-color: #657a97;
+        color: ghostwhite;
+    }
+}
+
+@media all and (max-width: 720px) {
+	table {display: none}		
+	a {margin-left: 15%}
+	ul li {margin: 0px}
+}
+@media all and (min-width: 720px) {
+    nav {display: inline}
+	nav li.dropdownMenu:hover ul.dropdownMenuContent {
+		display: block;
+	}
+    body {width: 96%}
+	section {width: 100%}
+	#wrapper {width: 100%}
+	ul{margin-left: 20%}
+}
